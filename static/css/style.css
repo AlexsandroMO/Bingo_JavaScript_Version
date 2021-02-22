@@ -111,20 +111,33 @@ h1, h2, h3, h4, h5, h6 {
 # Font
 --------------------------------------------------------------*/
 .far .fa-caret-square-right {
-  padding: 50px;
+  cursor: pointer;
+  margin: 5px;
 }
 
 #p-ajust{
   font-size: 50px;
   padding-top: 20px;
 }
-#p-ajust2{
+
+#p-ajust2 #p-ajust3{
   font-size: 30px;
   padding-top: 10px;
 }
+
 #td-alinha{
   float: right;
 }
+
+#li-ajust{
+  padding-left: 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # Header

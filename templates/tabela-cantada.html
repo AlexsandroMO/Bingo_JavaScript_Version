@@ -57,9 +57,12 @@
               <li><a class="nav-link scrollto active" href="file:///F:/Visual_Studio/Bingo_JavaScript_Version/templates/home.html">Home</a></li>
               <li class="dropdown"><a href="#"><span>Ações</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li onclick="index()"><a href="file:///F:/Visual_Studio/Bingo_JavaScript_Version/templates/index.html">Gerar Números</a></li>
-                  <li onclick="clear_all()"><a href="file:///F:/Visual_Studio/Bingo_JavaScript_Version/templates/home.html">Limpara Tabela</a></li>
-                  <li onclick="singed()"><a href="file:///F:/Visual_Studio/Bingo_JavaScript_Version/templates/tabela-cantada.html">Ver Listas Cantadas</a></li>
+                  <li><a href="file:///F:/Visual_Studio/Bingo_JavaScript_Version/templates/index.html">Gerar Números</a></li>
+                  <!-- <li id="li-ajust" onclick="index()">Gerar Números</li> -->
+                  <li><a href="#" onclick="clear_all()">Limpara Tabela</a></li>
+                  <!-- <li id="li-ajust" onclick="clear_all()">Limpara Tabela</li> -->
+                  <li><a href="file:///F:/Visual_Studio/Bingo_JavaScript_Version/templates/tabela-cantada.html">Ver Listas Cantadas</a></li>
+                  <!-- <li id="li-ajust" onclick="singed()">Ver Listas Cantadas</li> -->
                 </ul>
               </li>
               <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
@@ -67,10 +70,10 @@
               <li><a class="nav-link scrollto " href="#portfolio">Portifolio</a></li>
               <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
 
-          <a href="file:///F:/Visual_Studio/Bingo_JavaScript_Version/templates/tabela-cantada.html" class="get-started-btn scrollto" onclick="singed()">Ver Lista Cantada</a>
+         <!-- <a href="file:///F:/Visual_Studio/Bingo_JavaScript_Version/templates/tabela-cantada.html" class="get-started-btn scrollto" onclick="singed()">Ver Lista Cantada</a> -->
+         <button class="get-started-btn scrollto" onclick="singed()">Ver Lista Cantada</button>
         </div>
       </div>
 
@@ -84,19 +87,12 @@
       <div class="col-xl-8">
         <h1>Números Cantados</h1>
         <h2>
-          <p id="p-ajust2">
-            {% for item in var_list %}
-              {{ item }}
-            {% endfor %}
-          </p>
+          <p id="p-ajust2"></p>
+        </h2>
+        <h2>
+          <p id="p-ajust3"></p>
         </h2>
       </div>
-       <h2>
-          <p id="p-ajust2">
-            Itens Sorteados: {{ total }}
-          </p>
-        </h2>
-
       </div>
     </div>
   </div>
@@ -142,6 +138,9 @@
   <script src="../static/js/main.js"></script>
   <script src="../static/js/scripts.js"></script>
  
+  <script>
+    window.onload = singed();
+  </script>
  
 </body>
 
