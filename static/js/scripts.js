@@ -43,8 +43,10 @@ function clear_all(){
 
     setTimeout(function() {
         window.location.href = "file:///F:/Visual_Studio/Bingo_JavaScript_Version/templates/home.html";
-    }, 5000);
-    
+    }, 2000);
+
+    alert('Espere um Momento. Estamos Lipando o Banco de Dados pra Você')
+  
 }
 
 
